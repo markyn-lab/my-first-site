@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8e8">
+    <meta name="description" content="今日の気分に、小さなごきげんを。ごきげんクラブへようこそ。">
+    <title>ごきげんクラブ | 今日は、いい日にしよう。</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Zen+Maru+Gothic:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="ごきげんクラブ トップ">
+            <span class="wordmark-mark" aria-hidden="true">g!</span>
+            <span>ごきげんクラブ</span>
+        </a>
+        <nav class="site-nav" aria-label="メインナビゲーション">
+            <a href="#about">クラブのこと</a>
+            <a class="nav-cta" href="#check-in">気分をチェック <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR LITTLE DAILY HAPPY</p>
+                <h1 id="hero-title">今日は、<br>いい日に<span class="title-pop">しよう。</span></h1>
+                <p class="hero-description">大きな理由はいらないよ。<br>好きなものをひとつ見つけたら、今日はもういい日。</p>
+                <a class="hero-link" href="#check-in">今日のごきげんを見つける <span aria-hidden="true">↓</span></a>
+                <div class="hero-note"><span class="note-line"></span> take it easy, take it sunny</div>
+            </div>
+            <div class="hero-visual">
+                <div class="sun-stamp" aria-label="いい日になりますように">
+                    <span>GOOD</span><strong>DAY</strong><i aria-hidden="true">✳</i>
+                </div>
+                <img class="hero-photo" src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="朝の光が差し込むテーブルに並んだコーヒーと朝食">
+                <p class="photo-caption">a little pause, a little joy.</p>
+            </div>
+            <div class="hero-index" aria-hidden="true">01 <span></span> 03</div>
+        </section>
+
+        <section class="check-in" id="check-in" aria-labelledby="check-title">
+            <div class="section-heading">
+                <p class="eyebrow"><span class="eyebrow-dot"></span> A SMALL CHECK-IN</p>
+                <h2 id="check-title">いまの気分、どれに近い？</h2>
+                <p>ぴったりじゃなくて大丈夫。今日の自分に近いものを選んでね。</p>
+            </div>
+            <div class="mood-area">
+                <div class="mood-options" role="group" aria-label="今日の気分を選ぶ">
+                    <button class="mood-button mood-sunny" type="button" data-mood="sunny" aria-pressed="false">
+                        <span class="mood-symbol" aria-hidden="true">✳</span><span>晴れやか</span>
+                    </button>
+                    <button class="mood-button mood-cloudy" type="button" data-mood="steady" aria-pressed="false">
+                        <span class="mood-symbol" aria-hidden="true">◒</span><span>まあまあ</span>
+                    </button>
+                    <button class="mood-button mood-rest" type="button" data-mood="rest" aria-pressed="false">
+                        <span class="mood-symbol" aria-hidden="true">☾</span><span>ひと休み</span>
+                    </button>
+                </div>
+                <div class="mood-message" aria-live="polite" aria-atomic="true">
+                    <span class="message-label">TODAY'S NOTE</span>
+                    <p id="mood-message">まずは深呼吸。ここから、ゆっくりはじめよう。</p>
+                    <span class="message-spark" aria-hidden="true">✳</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about" aria-label="ごきげんクラブについて">
+            <p>ごきげんは、<span>自分でつくっていい。</span></p>
+            <span class="about-mark" aria-hidden="true">G!C</span>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="wordmark footer-wordmark" href="#top"><span class="wordmark-mark" aria-hidden="true">g!</span><span>ごきげんクラブ</span></a>
+        <p>© 2026 GOOD DAY CLUB</p>
+        <a class="back-top" href="#top" aria-label="ページの先頭へ">↑</a>
+    </footer>
+</body>
+</html>
